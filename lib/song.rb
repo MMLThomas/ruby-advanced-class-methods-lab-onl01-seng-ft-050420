@@ -25,10 +25,8 @@ class Song
   end
   
   def self.create_by_name(names)
-    song = Song.new
-    binding pry
+    self.class.create
     song.name = names
-    @@all << song
     song
   end
 
