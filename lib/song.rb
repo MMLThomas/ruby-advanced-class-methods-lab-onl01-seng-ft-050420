@@ -43,8 +43,8 @@ class Song
   end
       
   def self.alphabetical
-    @@all.sort 
-  end
+     @@all.map {|song| song.name.sort}
+   end
 
   def self.destroy_all
     @@all.clear
