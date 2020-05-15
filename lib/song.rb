@@ -24,6 +24,9 @@ class Song
   
   def self.create_by_name(names)
     song = Song.new
+    binding pry
+    song.name = names
+    @@all << song
   end
 
   def self.destroy_all
