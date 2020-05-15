@@ -21,7 +21,7 @@ class Song
     song = Song.new
     @name = name
   end
-  binding.pry
+
   def self.destroy_all
     @@all.clear
   end
