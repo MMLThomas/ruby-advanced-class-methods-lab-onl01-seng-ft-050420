@@ -2,10 +2,6 @@ require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
-  
-  def initialize
-    @name = name
-  end
 
   def self.all
     @@all
@@ -28,6 +24,7 @@ class Song
   
   def self.create_by_name(names)
     song = Song.new
+    binding pry
     song.name = names
     @@all << song
   end
