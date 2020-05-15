@@ -29,6 +29,7 @@ class Song
     binding pry
     song.name = names
     @@all << song
+    song
   end
 
   def self.destroy_all
