@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -20,7 +21,7 @@ class Song
     song = Song.new
     @name = name
   end
-  
+  binding.pry
   def self.destroy_all
     @@all.clear
   end
