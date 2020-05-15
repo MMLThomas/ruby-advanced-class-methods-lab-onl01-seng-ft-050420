@@ -2,6 +2,8 @@ require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
+  
+  def ins
 
   def self.all
     @@all
