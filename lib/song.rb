@@ -10,6 +10,17 @@ class Song
     self.class.all << self
   end
   
+  def self.create
+    song = Song.new 
+    @@all << song 
+    song
+  end
+  
+  def self.new_by_name(name)
+    name = Song.new
+    name.@name = name
+  end
+  
   def self.destroy_all
     @@all.clear
   end
