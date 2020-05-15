@@ -21,12 +21,12 @@ class Song
     song = Song.new
     song.name = names
     song
-    #@name = names
   end
   
   def self.create_by_name(names)
-    self.class.create
+    song = Song.new
     song.name = names
+    save
     song
   end
 
