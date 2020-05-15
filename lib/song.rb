@@ -49,7 +49,6 @@ class Song
   def self.new_from_filename(file_name)
     song = Song.new
     file_name = file_name.split("-")
-    binding pry
     song.artist_name = file_name[0]
     song.name = file_name[1]
     song
